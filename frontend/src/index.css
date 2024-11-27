@@ -1,0 +1,204 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* google font */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Quicksand";
+}
+
+.home {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  padding: 0 20px;
+  border: 1px solid black;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background-color: #1F2937;
+}
+
+.navbar-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar-content-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+
+.navbar-content-title {
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 5px;
+  color: #fff;
+}
+
+.navbar-content-history {
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.navbar-content-logo {
+  flex-basis: 25%;
+  max-width: 100%;
+}
+
+.navbar-content-logo img {
+  max-width: 20%;
+  height: auto;
+}
+
+.navbar-content-title {
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.navbar-content-history {
+  flex-basis: 25%;
+}
+
+.navbar-content-history button {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+.home-content-sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  flex-basis: 20%;
+  border-radius: 3px;
+  margin-top: 3px;
+  background-color: #1F2937;
+}
+
+.sidebar {
+  padding: 10px;
+  margin: 10px;
+}
+
+.home-content-vouchers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  flex-basis: 80%;
+  height: 670px;
+  margin-top: 3px;
+  margin-left: 3px;
+  border: 1px solid black;
+  border-radius: 3px;
+  background-color: #1F2937;
+  padding: 50px;
+}
+
+.voucher-img {
+  width: 20%;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-detail {
+  display: flex;
+  flex-direction: column;
+}
+
+.custom-voucher {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 5px;
+  color: #fff;
+}
+
+.no-message {
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-left: 360px;
+  color: #fff;
+  padding: 50px;
+}
+
+.history {
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.history-detail {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+
+.history-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 620px;
+  flex-basis: 75%;
+  background-color: #1F2937;
+  padding: 20px;
+  margin-right: 5px;
+}
+
+.history-sidebar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  flex-basis: 25%;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 20px;
+  background-color: #1F2937;
+}
+
+.sidebarHistory {
+  display: flex;
+  flex-direction: column;
+}
+
+.contentHistory {
+  display: flex;
+  flex-direction: column;
+}
+
+.contentHistory-detail {
+  display: flex;
+}

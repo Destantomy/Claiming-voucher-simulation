@@ -40,7 +40,7 @@ const signup = async (req, res) => {
                 }
             // succeed response
             res.status(201).json({
-                    message: 'user registered successfuly',
+                    message: 'user registered successfully',
                 });
             });
         });

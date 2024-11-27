@@ -5,9 +5,24 @@ require('dotenv').config();
 const db = require('./database/connection');
 const authRouter = require('./routes/authRoutes');
 const voucherRouter = require('./routes/voucherRoutes');
+const cors = require('cors');
+const corsOptions = {
+    origin: '*',
+    methods: 'GET, PUT, POST, DELETE',
+    credentials: true,
+    optionsSuccessStatus: 200,
+}
 
+// express app
 const app = express();
 const port = process.env.PORT || 3000;
+
+// cors
+app.use(cors(corsOptions));
+
+// body-parser
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 
 // middleware
 app.use(express.json());
@@ -15,10 +30,6 @@ app.use((req, res, next) => {
     console.log(req.path, req.method);
     next();
 });
-
-// body-parser
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: true}));
 
 // endpoints
 app.use('/api/auth/', authRouter);

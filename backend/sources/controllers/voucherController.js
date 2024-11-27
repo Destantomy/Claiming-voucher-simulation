@@ -7,9 +7,7 @@ const getVouchersData = async (req, res) => {
             if (error) {
                 console.error('error db :', error);
             }
-            return res.status(200).json({
-                result: result,
-            });
+            return res.status(200).json({result});
         });
     } catch (error) {
         console.error('error :', error);
